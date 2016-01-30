@@ -1,0 +1,360 @@
+/* This stylesheet is generated, DO NOT EDIT */
+/* Copyright 2009, 2015 Red Hat, Inc.
+ *
+ * Portions adapted from Mx's data/style/default.css
+ *   Copyright 2009 Intel Corporation
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms and conditions of the GNU Lesser General Public License,
+ * version 2.1, as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+/* Panel */
+#panel {
+  color: #ffffff;
+  font-size: 14,5px;
+  background-color: #2d2d2d;
+  border-color: #202020;
+  border-bottom-width: 1px;
+}
+
+/* Slider */
+.slider {
+    height: 1em;
+    -slider-height: 0.3em;
+    -slider-background-color: #333333;
+    -slider-border-color: #5f5f5f;
+    -slider-active-background-color: #6d6d6d;
+    -slider-active-border-color: #6d6d6d;
+    -slider-border-width: 0px;
+    -slider-handle-radius: 6px;
+}
+
+/* Menus */
+.popup-menu {
+  min-width: 200px; }
+  .popup-menu .popup-sub-menu {
+    background-color: #2d2d2d;
+    box-shadow: inset 0 -1px 0px #282c2c; }
+  .popup-menu .popup-menu-content {
+    padding: 1em 0em; }
+  .popup-menu .popup-menu-item {
+    spacing: 12px; }
+    .popup-menu .popup-menu-item:ltr {
+      padding: .4em 1.75em .4em 0em; }
+    .popup-menu .popup-menu-item:rtl {
+      padding: .4em 0em .4em 1.75em; }
+    .popup-menu .popup-menu-item:checked {
+      background-color: #2d2d2d;
+      box-shadow: inset 0 1px 0px #282c2c;
+      font-weight: bold; }
+    .popup-menu .popup-menu-item.selected {
+      background-color: #4D4D4D;
+      color: #ffffff; }
+    .popup-menu .popup-menu-item:active {
+      background-color: #4D4D4D;
+      color: #ffffff; }
+    .popup-menu .popup-menu-item:insensitive {
+      color: rgba(238, 238, 236, 0.5); }
+  .popup-menu .popup-inactive-menu-item {
+    color: #eeeeec; }
+    .popup-menu .popup-inactive-menu-item:insensitive {
+      color: rgba(238, 238, 236, 0.5); }
+  .popup-menu.panel-menu {
+    -boxpointer-gap: 4px;
+    margin-bottom: 1.75em; }
+
+.popup-menu-ornament {
+  text-align: right;
+  width: 1.2em; }
+
+.popup-menu-boxpointer,
+.candidate-popup-boxpointer {
+  -arrow-border-radius: 0px;
+  -arrow-background-color: #2d2d2d;
+  -arrow-border-width: 1px;
+  -arrow-border-color: #202020;
+  -arrow-base: 0px;
+  -arrow-rise: 2px;
+  -arrow-box-shadow: 0 1px 3px black; }
+
+.popup-separator-menu-item {
+  height: 1px;
+  margin: 6px 64px;
+  background-color: transparent;
+  border-color: #202020;
+  border-bottom-width: 1px;
+  border-bottom-style: solid; }
+
+.background-menu {
+  -boxpointer-gap: 4px;
+  -arrow-rise: 0px; }
+
+/* Overview */
+
+#overview {
+    spacing: 24px;
+}
+
+.overview-controls {
+    padding-bottom: 32px;
+}
+
+.workspace-thumbnails {
+    spacing: 11px;
+    visible-width: 32px; /* Amount visible before hovering */
+    border: 0px;
+    border-right: 0px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: none;
+    padding: 5px 7px 5px 11px;
+}
+
+.workspace-thumbnails:rtl {
+    border-right: 0px;
+    border-left: 0px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 5px 11px 5px 7px;
+}
+
+.workspace-thumbnail-indicator {
+    border: 4px solid #d6d6d6;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0px;
+    padding: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.window-caption {
+    spacing: 25px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 0px;
+    padding: 4px 12px;
+    -shell-caption-spacing: 12px;
+    border: 1px solid rgba(25, 25, 25, 0.8);
+}
+
+.window-caption:hover {
+    border: 2px solid rgba(25, 25, 25, 0.8);
+}
+
+.window-close, .notification-close {
+    background-color: none;
+    background-size: 32px;
+    height: 32px;
+    width: 32px;
+}
+
+.window-close {
+    -shell-close-overlap: 22px;
+}
+
+.window-clone-border {
+    border: 2px solid #d6d6d6;
+    border-radius: 0px;
+}
+
+.notification-close {
+    /* we start out in the top right of the
+     * notification, inset.
+     *
+     * center is 32px/2 = 16px
+     *
+     * adjust left 2px
+     * adjust down 8px */
+
+    -shell-close-overlap-x: 14px;
+    -shell-close-overlap-y: -12px;
+}
+
+.notification-close:rtl {
+    /* as above, but starting out in the top left of the
+     * notification. */
+
+    -shell-close-overlap-x: -14px;
+}
+
+.window-close:rtl {
+    -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.window-picker {
+    -horizontal-spacing: 32px;
+    -vertical-spacing: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 48px;
+}
+
+.window-picker.external-monitor {
+    padding: 32px;
+}
+
+.messages-indicator {
+    color: #afafaf;
+    height: 32px;
+}
+
+.messages-indicator-contents {
+    spacing: 12px;
+    padding-bottom: 12px;
+}
+
+.messages-indicator-contents:hover {
+    color: white;
+    text-shadow: black 0px 2px 2px;
+}
+
+.messages-indicator-highlight {
+    background-gradient-start: transparent;
+    background-gradient-end: #afafaf;
+    background-gradient-direction: vertical;
+
+    height: 6px;
+}
+
+/* Calendar popup */
+
+.calendar-vertical-separator {
+    -stipple-width: 1px;
+    -stipple-color: #505050;
+    width: 0.3em;
+}
+
+.calendar {
+    padding: .4em 1.4em .8em 1.4em;
+}
+
+.calendar-month-label {
+    color: #e6e6e6;
+    font-size: 10pt;
+    font-weight: normal;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.calendar-month-label:focus {
+    background-color: #e6e6e6;
+    color: #000000;
+}
+
+.datemenu-date-label {
+    padding: .4em 1.35em;
+    font-weight: normal;
+    text-align: center;
+    color: #e6e6e6;
+    border-radius: 0px;
+}
+
+.datemenu-date-label:hover,
+.datemenu-date-label:focus {
+    background-color: #e6e6e6;
+    color: #000000;
+}
+
+.datemenu-date-label:active {
+    background-color: #dcdcdc;
+}
+
+.calendar-day-base {
+    font-size: 9pt;
+    text-align: center;
+    width: 2.2em;
+    height: 2.2em;
+}
+
+.calendar-day-base:hover,
+.calendar-day-base:focus {
+    background-color: #e6e6e6;
+    color: #000000;
+}
+
+.calendar-day-base:active {
+    font-size: 9pt;
+    background-color: #dcdcdc;
+    color: black;
+}
+
+.calendar-day-heading {
+    color: #e6e6e6;
+    padding-top: .3em;
+    height: 1.6em;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+.calendar-week-number {
+    color: #e6e6e6;
+    font-weight: normal;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+/* App Switcher */
+.switcher-popup {
+    padding: 16px;
+    spacing: 6px;
+}
+
+.osd-window,
+.switcher-list {
+    background: rgba(0,0,0,0.9);
+    border: 2px solid rgba(255,255,255,0.7);
+    border-radius: 0px;
+    padding: 20px;
+}
+
+.switcher-list-item-container {
+    spacing: 8px;
+}
+
+.switcher-list .item-box {
+    padding: 8px;
+    border-radius: 0px;
+}
+
+.switcher-list .item-box:outlined {
+    padding: 6px;
+    border: 1px solid rgba(85,85,85,1.0);
+}
+
+.switcher-list .item-box:selected {
+    background-color: #303030;
+    box-shadow: inset 0px 0px 2px rgba(255,255,255,1.0);
+}
+
+.switcher-list .thumbnail-box {
+    padding: 2px;
+    spacing: 4px;
+}
+
+.switcher-list .thumbnail {
+    width:  256px;
+}
+
+.switcher-list .separator {
+    width: 1px;
+    background: rgba(255,255,255,0.33);
+}
+
+.switcher-arrow {
+    border-color: rgba(0,0,0,0);
+    color: #808080;
+}
+
+.switcher-arrow:highlighted {
+    border-color: rgba(0,0,0,0);
+    color: white;
+}
